@@ -1,0 +1,115 @@
+@font-face {
+    font-family: "Atlantis Headline";
+    src: url(AtlantisHeadline-Bold.otf) format("opentype")
+}
+#devToolbar{
+    background-color: white;
+    font: initial;
+    animation: none;
+    text-shadow: none;
+    color: black;
+}
+html {
+    scroll-behavior: smooth;
+}
+:root {
+    --se-bright: #e0fdf6;
+    --se-link: #a4f0d0;
+    --se-light: #50daac;
+    --se-regular: hsl(150, 79%, 48%);
+    --se-moody: #78d7b7;
+    --se-success: #0c0;
+    --se-success-pop: #030;
+    --se-warning: #f00;
+    --se-warning-pop: #500;
+    --se-bright-dropshadow: #f4e0fd2a;
+    --se-light-dropshadow: #ca50da16;
+    --se-regular-dropshadow: #9a10c828;
+    /* Flicker constants */
+    --lu-flicker-off: brightness(0.9);
+    --lu-flicker-on: brightness(1.1);
+    /* Static */
+    --lu-static: static 2s infinite;
+}
+/* flickering!! */
+.flickering {
+    animation: flickering 0.075s infinite;
+}
+@keyframes flickering {
+    from {
+        filter: var(--lu-flicker-on);
+    }
+    to {
+        filter: var(--lu-flicker-off);
+    }
+}
+
+
+.centered {
+  max-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+h1 {
+    margin: 0;
+    font-family: "Atlantis Headline";
+    display: inline;
+    font-size: 500%;
+    color: var(--se-regular);
+    text-shadow: 0.1em 0.1em 0 #000b, 0 0 24px var(--se-regular-dropshadow);
+    -webkit-text-stroke: var(--se-bright) 0.0125em;
+    line-height: 150%;
+} 
+
+
+/* static! */
+.static {
+    animation: static 2s infinite;
+}
+@keyframes static {
+    0% {
+        mask-image: url(vfx/static0.png);
+        mask-size: 50px;
+        mask-mode: luminance;
+    }
+    12.5% {
+        mask-image: url(vfx/static1.png);
+        mask-size: 50px;
+        mask-mode: luminance;
+    }
+    25% {
+        mask-image: url(vfx/static2.png);
+        mask-size: 50px;
+        mask-mode: luminance;
+    }
+    37.5% {
+        mask-image: url(vfx/static3.png);
+        mask-size: 50px;
+        mask-mode: luminance;
+    }
+    50% {
+        mask-image: url(vfx/static4.png);
+        mask-size: 50px;
+        mask-mode: luminance;
+    }
+    62.5% {
+        mask-image: url(vfx/static5.png);
+        mask-size: 50px;
+        mask-mode: luminance;
+    }
+    75% {
+        mask-image: url(vfx/static6.png);
+        mask-size: 50px;
+        mask-mode: luminance;
+    }
+    87.5% {
+        mask-image: url(vfx/static7.png);
+        mask-size: 50px;
+        mask-mode: luminance;
+    }
+    100% {
+        mask-image: url(vfx/static0.png);
+        mask-size: 50px;
+        mask-mode: luminance;
+    }
+}
