@@ -23,7 +23,7 @@ html {
     --se-warning: #f00;
     --se-warning-pop: #500;
     --se-bright-dropshadow: #f4e0fd2a;
-    --se-light-dropshadow: #ca50da16;
+    --se-light-dropshadow: #0dbb2994;
     --se-regular-dropshadow: #9a10c828;
     /* Flicker constants */
     --lu-flicker-off: brightness(0.9);
