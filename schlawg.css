@@ -56,7 +56,7 @@ h1 {
     display: inline;
     font-size: 500%;
     color: var(--se-regular);
-    text-shadow: 0.1em 0.1em 0 #000b, 0 0 24px var(--se-regular-dropshadow);
+    text-shadow: 0.1em 0.1em 0 #000b, 0 0 24px var(--se-light-dropshadow);
     -webkit-text-stroke: var(--se-bright) 0.0125em;
     line-height: 150%;
 } 
